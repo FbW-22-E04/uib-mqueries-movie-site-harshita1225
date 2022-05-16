@@ -1,0 +1,133 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    font-size: 62.5%;
+}
+body{
+    margin:3rem;
+    font-family:cursive;
+    overflow: scroll;
+}
+
+.header{
+    height:60rem;
+    background-image:url("https://greekreporter.com/wp-content/uploads/2012/08/before_sunrise__1995_-fanart.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    position: relative;
+}
+.header-top{
+    background-image:url("https://besthqwallpapers.com/Uploads/24-6-2020/136859/thumb2-colorful-abstract-pattern-4k-creative-colorful-lines-linear-patterns.jpg");
+    background-position: cover;
+    height:12rem;
+}
+
+.movie-name{
+    position:absolute;
+    top:2.5rem;
+    right:45%;
+    width:20rem;
+    height:8rem;
+    border:5px solid white;
+    border-radius: 25rem;
+    color:white;
+    font-size:3rem;
+    padding:1.5rem;
+}
+
+    .coming-soon{
+        position: absolute;
+        top:20rem;
+        width:20%;
+        padding:2rem;
+        border:5px solid white;
+        color:white;
+        font-size:8rem;
+        background-image: url("https://besthqwallpapers.com/Uploads/24-6-2020/136859/thumb2-colorful-abstract-pattern-4k-creative-colorful-lines-linear-patterns.jpg"); 
+    }
+
+.nav{
+    padding:1rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    background-color: lightblue;
+    display:flex;
+    justify-content: space-evenly;
+}
+.nav a {
+    text-decoration: none;
+    color:red;
+    
+}
+
+
+/*** media query  for tablets ***/
+
+@media only screen and (max-width:48em) {
+    body {
+    margin:0;
+    }
+    .header{
+        background-size: contain;
+        background-position: center;;
+    }
+    .movie-name{
+        top:2rem;
+        right:30rem;
+        font-size:4rem;
+        width:25rem;
+    }
+
+    .coming-soon{
+        width:100%;
+        top:50rem;
+        text-align: center;
+        font-size:4rem;
+    }
+
+  }
+
+
+
+
+  /*** media query  for mobiles ***/
+
+@media only screen and (max-width:30em) {
+    body {
+        margin:0;
+        padding:0;
+    }
+    .header{
+        background-position:center top 35%;
+    }
+    .movie-name{
+        text-align: center;
+        top:2rem;
+        right:10rem;
+        font-size:3rem;
+        padding:0.5rem;
+        height:5rem;
+    }
+
+    .coming-soon{
+        width:100%;
+        top:30rem;
+        text-align: center;
+        font-size:3rem;
+    }
+    .nav  {
+        position:absolute;
+        top:38.5rem;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .nav a {
+        width:40rem;
+    }
+
+  }
