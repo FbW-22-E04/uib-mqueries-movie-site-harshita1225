@@ -129,12 +129,13 @@ body{
 }
 
 
-@media screen and (min-width:866px){
+@media screen and (min-width:891px){
     .poster{
         position: relative;
     }
 
     .header-side{
+        font-size: 2.8rem;
         width:5em;
         position:absolute;
         bottom:18em;
@@ -153,28 +154,42 @@ body{
 
 
     @media screen and (min-width:944px){
-        .poster{
-            position: relative;
-        }
+        
     
         .header-side{
-            width:5em;
-            position:absolute;
-            bottom:15em;
-            left:2em;
+        font-size: 2.9rem;
+                    
     
         }
 
-        @media screen and (min-width:1040px){
-            .poster{
-                position: relative;
-            }
+        @media screen and (min-width:1030px){
         
             .header-side{
-                width:5em;
-                position:absolute;
-                bottom:10em;
-                left:2em;
+               font-size:3.3rem;
+               position: absolute;
+               bottom:40rem;
+           }
+                    
         
             }
+
+
+            @media screen and (min-width:1152px){
+            
+            
+                .header-side{
+                    font-size: 4rem;
+                    position: absolute;
+                        bottom:35rem;
+                }
+
+                @media screen and (min-width:1198px){
+            
+            
+                    .header-side{
+                        font-size: 4rem;
+                        position: absolute;
+                        bottom:40rem;
+                    }
+    
 }
