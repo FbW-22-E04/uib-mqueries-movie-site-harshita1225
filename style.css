@@ -107,10 +107,17 @@ body{
 
 
 @media screen and (min-width:686px){
+    .nav a,.about-movie {
+        font-size: 2rem;
+    }
+    .main-heading{
+        font-size:3.5rem;
+    }
 
     .poster{
         position: relative;
     }
+
 
     .header-side{
         width:5em;
@@ -132,7 +139,16 @@ body{
         position:absolute;
         bottom:18em;
         left:2em;
-
+    }
+    .cast-img{
+        display: flex;
+        flex-direction: column;
+        width: 25em;
+        margin:2rem auto;
+    }
+    .cast-img img{
+        margin:1rem;
+        border:1px solid saddlebrown;
     }
 
 
