@@ -10,21 +10,23 @@
 }
 body{
     margin:3rem;
-    font-family:cursive;
-    overflow: scroll;
+    font-family:cursive;  
 }
 
 .header{
-    height:60rem;
+    border:2px solid yellow;
+    height:55rem;
     background-image:url("https://greekreporter.com/wp-content/uploads/2012/08/before_sunrise__1995_-fanart.jpg");
     background-size: cover;
+    background-position:top center;
     background-repeat:no-repeat;
-    position: relative;
+    position:relative;
 }
 .header-top{
     background-image:url("https://besthqwallpapers.com/Uploads/24-6-2020/136859/thumb2-colorful-abstract-pattern-4k-creative-colorful-lines-linear-patterns.jpg");
     background-position: cover;
-    height:12rem;
+    background-position: top center;
+    height:20%;
 }
 
 .movie-name{
@@ -39,16 +41,18 @@ body{
     font-size:3rem;
     padding:1.5rem;
 }
-
+.header-side{
+    background-image:url("https://besthqwallpapers.com/Uploads/24-6-2020/136859/thumb2-colorful-abstract-pattern-4k-creative-colorful-lines-linear-patterns.jpg");
+    background-position: cover;
+    position: absolute;
+    top:20rem;
+    max-width:25%;
+}
     .coming-soon{
-        position: absolute;
-        top:20rem;
-        width:20%;
         padding:2rem;
         border:5px solid white;
         color:white;
-        font-size:8rem;
-        background-image: url("https://besthqwallpapers.com/Uploads/24-6-2020/136859/thumb2-colorful-abstract-pattern-4k-creative-colorful-lines-linear-patterns.jpg"); 
+        font-size:5rem;
     }
 
 .nav{
@@ -68,36 +72,35 @@ body{
 
 /*** media query  for tablets ***/
 
-@media only screen and (max-width:48em) {
-    body {
+@media only screen and (max-width:774px) 
+{
+    body 
+    {
     margin:0;
+    padding:0;
     }
     .header{
-        background-size: contain;
-        background-position: center;;
+        background-position: center;
+    }
+
+    .header-side{
+        background-image: url("https://besthqwallpapers.com/Uploads/24-6-2020/136859/thumb2-colorful-abstract-pattern-4k-creative-colorful-lines-linear-patterns.jpg");
+        position: absolute;
+        top:30rem;
+
     }
     .movie-name{
-        top:2rem;
+        top:1rem;
         right:30rem;
-        font-size:4rem;
-        width:25rem;
+        font-size:3rem;
+        width:20rem;
     }
-
-    .coming-soon{
-        width:100%;
-        top:50rem;
-        text-align: center;
-        font-size:4rem;
-    }
-
   }
-
-
-
 
   /*** media query  for mobiles ***/
 
-@media only screen and (max-width:30em) {
+@media only screen and (max-width:560px)
+ {
     body {
         margin:0;
         padding:0;
@@ -113,8 +116,12 @@ body{
         padding:0.5rem;
         height:5rem;
     }
-
+.header-side {
+min-width:100%;
+top:52rem;
+}
     .coming-soon{
+        border:none;
         width:100%;
         top:30rem;
         text-align: center;
@@ -122,12 +129,13 @@ body{
     }
     .nav  {
         position:absolute;
-        top:38.5rem;
+        top:58.5rem;
         flex-wrap: wrap;
         text-align: center;
     }
     .nav a {
         width:40rem;
+        font-size:1.8rem;
     }
 
   }
