@@ -125,6 +125,17 @@ body{
         left:1.5em;
 
     }
+
+    .nav{
+        padding:2rem;
+        margin:0;
+        font-weight:800;
+        flex-direction:row;
+    }
+
+.nav a{
+    font-size:2.5rem;
+}
 }
 
 
@@ -140,6 +151,9 @@ body{
         bottom:18em;
         left:2em;
     }
+    .about-movie{
+        padding:2rem 8rem;
+    }
     .cast-img{
         display:flex;
         flex-direction:column;
@@ -151,16 +165,7 @@ body{
         border:1px solid saddlebrown;
     }
 
-    .nav{
-        padding:2rem;
-        margin:0;
-        font-weight:800;
-        flex-direction:row;
-    }
-
-.nav a{
-    font-size:3rem;
-}
+    
 }
     @media screen and (min-width:944px){
         
@@ -168,7 +173,7 @@ body{
         .header-side{
         font-size: 2.9rem;
                     
-        }
+        }}
 
         @media screen and (min-width:1030px){
         
@@ -190,6 +195,7 @@ body{
                     position: absolute;
                         bottom:35rem;
                 }
+            }
 
                 @media screen and (min-width:1198px){
             
