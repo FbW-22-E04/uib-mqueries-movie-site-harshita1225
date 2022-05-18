@@ -108,7 +108,8 @@ body{
 
 @media screen and (min-width:686px){
     .nav a,.about-movie {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin:1.5rem;
     }
     .main-heading{
         font-size:3.5rem;
@@ -123,20 +124,14 @@ body{
         position:absolute;
         bottom:20em;
         left:1.5em;
-
     }
 
     .nav{
         padding:2rem;
         margin:0;
         font-weight:800;
-        display: flex;
-        flex-direction:row;
+        display: block;
     }
-
-.nav a{
-    font-size:2.5rem;
-}
 }
 
 
