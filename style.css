@@ -60,7 +60,7 @@ body{
 }
 
 .nav a:hover{
-    background-color: white;
+    font-size: larger;
 }
 
 .main-heading{
